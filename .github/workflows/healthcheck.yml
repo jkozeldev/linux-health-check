@@ -1,0 +1,16 @@
+name: Bash Health Check
+
+on:
+  push:
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Bash syntax
+        run: bash -n healthcheck.sh
