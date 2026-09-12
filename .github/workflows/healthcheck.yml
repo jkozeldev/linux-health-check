@@ -17,3 +17,6 @@ jobs:
 
       - name: Run Health Check
         run: ./healthcheck.sh --system
+
+      - name: Test Help Command
+        run: ./healthcheck.sh --help
