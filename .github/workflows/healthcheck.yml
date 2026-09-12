@@ -16,4 +16,4 @@ jobs:
         run: bash -n healthcheck.sh
 
       - name: Run Health Check
-        run: ./healthcheck.sh
+        run: ./healthcheck.sh --system
