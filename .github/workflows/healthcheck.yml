@@ -14,3 +14,6 @@ jobs:
 
       - name: Check Bash syntax
         run: bash -n healthcheck.sh
+
+      - name: Run Health Check
+        run: ./healthcheck.sh
